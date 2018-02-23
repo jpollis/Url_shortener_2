@@ -15,7 +15,7 @@ def show
 end
 
 def show_full
-  redirect_to "http://#{@url.id}"
+  redirect_to "http://#{@url.name}"
 end
 #
 # def show_name
