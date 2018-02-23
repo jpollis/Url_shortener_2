@@ -2,7 +2,7 @@
 
 <%= form_for @url do |f| %>
 <p>
-<%= f.label :name%> : <%= f.text_field :name %>
+<%= f.label :name%> : <%= f.url_field :name %>
 </p>
 <p>
   <%= f.hidden_field :random_id, :value => @url.random_id %>

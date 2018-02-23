@@ -8,14 +8,14 @@ end
 def show
   url = Url.where(:random_id=>params[:id]).first
   if url
-    redirect_to "http://#{url.name}"
+    redirect_to url.name
   else
     redirect_to "index"
   end
 end
 
 def show_full
-  redirect_to "http://#{@url.name}"
+  redirect_to @url.name
 end
 #
 # def show_name
