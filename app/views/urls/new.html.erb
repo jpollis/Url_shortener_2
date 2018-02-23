@@ -1,0 +1,14 @@
+<h1>New Url</h1>
+
+<%= form_for @url do |f| %>
+<p>
+<%= f.label :name%> : <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.hidden_field :random_id, :value => @url.random_id %>
+</p>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>
+<%= link_to 'Back', urls_path %>
